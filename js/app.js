@@ -12,14 +12,15 @@ $(document).ready(function(){
   	});
 
 
-var setCount=function(number){
-  $("#count").text(number);
+var setCount=function(count){
+  $("#count").text(count);
 };
 var count=+$("#count").text()+1;
 
 var newGame=function(){
   generateNumber();
   setCount(0);
+  count=0+1;
   $("#guessList li").remove();
   $("#feedback").text("Make your Guess!");
   clearUserGuess();
